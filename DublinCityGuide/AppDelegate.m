@@ -17,11 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIEdgeInsets insets = UIEdgeInsetsMake(10, 0, 0, 0); // or (0, 0, -10.0, 0)
+    /*UIEdgeInsets insets = UIEdgeInsetsMake(10, 0, 0, 0); // or (0, 0, -10.0, 0)
     UIImage *alignedImage = [[UIImage imageNamed:@"back_button.png"] imageWithAlignmentRectInsets:insets];
     alignedImage = [alignedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [[UINavigationBar appearance] setBackIndicatorImage:alignedImage];
-    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:alignedImage];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:alignedImage];*/
     
     return YES;
 }
