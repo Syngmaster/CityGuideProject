@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCA32CE81F8E58A0007E77C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA32CE61F8E4469007E77C1 /* MapKit.framework */; };
+		DCA32CEC1F8E5A07007E77C1 /* SMCustomSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEB1F8E5A07007E77C1 /* SMCustomSearchBarView.m */; };
+		DCA32CEF1F8E77B9007E77C1 /* SMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */; };
+		DCA32CF21F8E89E6007E77C1 /* SMCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CF11F8E89E6007E77C1 /* SMCategoriesViewController.m */; };
+		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
+		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
+		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
+		DCC93D821F8E413100F44DCD /* DublinCityGuide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D801F8E413100F44DCD /* DublinCityGuide.xcdatamodeld */; };
+		DCC93D841F8E413100F44DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D831F8E413100F44DCD /* Assets.xcassets */; };
+		DCC93D871F8E413100F44DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D851F8E413100F44DCD /* LaunchScreen.storyboard */; };
+		DCC93D921F8E413200F44DCD /* DublinCityGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D911F8E413200F44DCD /* DublinCityGuideTests.m */; };
+		DCC93D9D1F8E413200F44DCD /* DublinCityGuideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D9C1F8E413200F44DCD /* DublinCityGuideUITests.m */; };
+		DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */; };
+		DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCC93D8E1F8E413200F44DCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC93D691F8E413100F44DCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC93D701F8E413100F44DCD;
+			remoteInfo = DublinCityGuide;
+		};
+		DCC93D991F8E413200F44DCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC93D691F8E413100F44DCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC93D701F8E413100F44DCD;
+			remoteInfo = DublinCityGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCA32CE61F8E4469007E77C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DCA32CEA1F8E5A07007E77C1 /* SMCustomSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCustomSearchBarView.h; sourceTree = "<group>"; };
+		DCA32CEB1F8E5A07007E77C1 /* SMCustomSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCustomSearchBarView.m; sourceTree = "<group>"; };
+		DCA32CED1F8E77B9007E77C1 /* SMSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSearchTextField.h; sourceTree = "<group>"; };
+		DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSearchTextField.m; sourceTree = "<group>"; };
+		DCA32CF01F8E89E6007E77C1 /* SMCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoriesViewController.h; sourceTree = "<group>"; };
+		DCA32CF11F8E89E6007E77C1 /* SMCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoriesViewController.m; sourceTree = "<group>"; };
+		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCC93D781F8E413100F44DCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCC93D7E1F8E413100F44DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC93D811F8E413100F44DCD /* DublinCityGuide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DublinCityGuide.xcdatamodel; sourceTree = "<group>"; };
+		DCC93D831F8E413100F44DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC93D861F8E413100F44DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCC93D881F8E413100F44DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC93D8D1F8E413200F44DCD /* DublinCityGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DublinCityGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC93D911F8E413200F44DCD /* DublinCityGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DublinCityGuideTests.m; sourceTree = "<group>"; };
+		DCC93D931F8E413200F44DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC93D981F8E413200F44DCD /* DublinCityGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DublinCityGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC93D9C1F8E413200F44DCD /* DublinCityGuideUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DublinCityGuideUITests.m; sourceTree = "<group>"; };
+		DCC93D9E1F8E413200F44DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC93DAA1F8E415900F44DCD /* SMLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLocationModel.h; sourceTree = "<group>"; };
+		DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLocationModel.m; sourceTree = "<group>"; };
+		DCC93DAF1F8E43D400F44DCD /* SMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMainViewController.h; sourceTree = "<group>"; };
+		DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC93D6E1F8E413100F44DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA32CE81F8E58A0007E77C1 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC93D8A1F8E413200F44DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC93D951F8E413200F44DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCA32CE51F8E4469007E77C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCA32CE61F8E4469007E77C1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCA32CE91F8E59E9007E77C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCA32CEA1F8E5A07007E77C1 /* SMCustomSearchBarView.h */,
+				DCA32CEB1F8E5A07007E77C1 /* SMCustomSearchBarView.m */,
+				DCA32CED1F8E77B9007E77C1 /* SMSearchTextField.h */,
+				DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DCC93D681F8E413100F44DCD = {
+			isa = PBXGroup;
+			children = (
+				DCC93D731F8E413100F44DCD /* DublinCityGuide */,
+				DCC93D901F8E413200F44DCD /* DublinCityGuideTests */,
+				DCC93D9B1F8E413200F44DCD /* DublinCityGuideUITests */,
+				DCC93D721F8E413100F44DCD /* Products */,
+				DCA32CE51F8E4469007E77C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC93D721F8E413100F44DCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93D711F8E413100F44DCD /* DublinCityGuide.app */,
+				DCC93D8D1F8E413200F44DCD /* DublinCityGuideTests.xctest */,
+				DCC93D981F8E413200F44DCD /* DublinCityGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC93D731F8E413100F44DCD /* DublinCityGuide */ = {
+			isa = PBXGroup;
+			children = (
+				DCA32CE91F8E59E9007E77C1 /* View */,
+				DCC93DAE1F8E43BF00F44DCD /* Controller */,
+				DCC93DAD1F8E415E00F44DCD /* Model */,
+				DCC93D771F8E413100F44DCD /* AppDelegate.h */,
+				DCC93D781F8E413100F44DCD /* AppDelegate.m */,
+				DCC93D7D1F8E413100F44DCD /* Main.storyboard */,
+				DCC93D831F8E413100F44DCD /* Assets.xcassets */,
+				DCC93D851F8E413100F44DCD /* LaunchScreen.storyboard */,
+				DCC93D881F8E413100F44DCD /* Info.plist */,
+				DCC93D801F8E413100F44DCD /* DublinCityGuide.xcdatamodeld */,
+				DCC93D741F8E413100F44DCD /* Supporting Files */,
+			);
+			path = DublinCityGuide;
+			sourceTree = "<group>";
+		};
+		DCC93D741F8E413100F44DCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93D751F8E413100F44DCD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCC93D901F8E413200F44DCD /* DublinCityGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93D911F8E413200F44DCD /* DublinCityGuideTests.m */,
+				DCC93D931F8E413200F44DCD /* Info.plist */,
+			);
+			path = DublinCityGuideTests;
+			sourceTree = "<group>";
+		};
+		DCC93D9B1F8E413200F44DCD /* DublinCityGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93D9C1F8E413200F44DCD /* DublinCityGuideUITests.m */,
+				DCC93D9E1F8E413200F44DCD /* Info.plist */,
+			);
+			path = DublinCityGuideUITests;
+			sourceTree = "<group>";
+		};
+		DCC93DAD1F8E415E00F44DCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93DAA1F8E415900F44DCD /* SMLocationModel.h */,
+				DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DCC93DAE1F8E43BF00F44DCD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93DAF1F8E43D400F44DCD /* SMMainViewController.h */,
+				DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */,
+				DCA32CF01F8E89E6007E77C1 /* SMCategoriesViewController.h */,
+				DCA32CF11F8E89E6007E77C1 /* SMCategoriesViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC93D701F8E413100F44DCD /* DublinCityGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC93DA11F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuide" */;
+			buildPhases = (
+				DCC93D6D1F8E413100F44DCD /* Sources */,
+				DCC93D6E1F8E413100F44DCD /* Frameworks */,
+				DCC93D6F1F8E413100F44DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DublinCityGuide;
+			productName = DublinCityGuide;
+			productReference = DCC93D711F8E413100F44DCD /* DublinCityGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCC93D8C1F8E413200F44DCD /* DublinCityGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC93DA41F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuideTests" */;
+			buildPhases = (
+				DCC93D891F8E413200F44DCD /* Sources */,
+				DCC93D8A1F8E413200F44DCD /* Frameworks */,
+				DCC93D8B1F8E413200F44DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC93D8F1F8E413200F44DCD /* PBXTargetDependency */,
+			);
+			name = DublinCityGuideTests;
+			productName = DublinCityGuideTests;
+			productReference = DCC93D8D1F8E413200F44DCD /* DublinCityGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCC93D971F8E413200F44DCD /* DublinCityGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC93DA71F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuideUITests" */;
+			buildPhases = (
+				DCC93D941F8E413200F44DCD /* Sources */,
+				DCC93D951F8E413200F44DCD /* Frameworks */,
+				DCC93D961F8E413200F44DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC93D9A1F8E413200F44DCD /* PBXTargetDependency */,
+			);
+			name = DublinCityGuideUITests;
+			productName = DublinCityGuideUITests;
+			productReference = DCC93D981F8E413200F44DCD /* DublinCityGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC93D691F8E413100F44DCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Syngmaster;
+				TargetAttributes = {
+					DCC93D701F8E413100F44DCD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4PMQKT6K8N;
+						ProvisioningStyle = Automatic;
+					};
+					DCC93D8C1F8E413200F44DCD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4PMQKT6K8N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCC93D701F8E413100F44DCD;
+					};
+					DCC93D971F8E413200F44DCD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4PMQKT6K8N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCC93D701F8E413100F44DCD;
+					};
+				};
+			};
+			buildConfigurationList = DCC93D6C1F8E413100F44DCD /* Build configuration list for PBXProject "DublinCityGuide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCC93D681F8E413100F44DCD;
+			productRefGroup = DCC93D721F8E413100F44DCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC93D701F8E413100F44DCD /* DublinCityGuide */,
+				DCC93D8C1F8E413200F44DCD /* DublinCityGuideTests */,
+				DCC93D971F8E413200F44DCD /* DublinCityGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC93D6F1F8E413100F44DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC93D871F8E413100F44DCD /* LaunchScreen.storyboard in Resources */,
+				DCC93D841F8E413100F44DCD /* Assets.xcassets in Resources */,
+				DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC93D8B1F8E413200F44DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC93D961F8E413200F44DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC93D6D1F8E413100F44DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */,
+				DCC93D821F8E413100F44DCD /* DublinCityGuide.xcdatamodeld in Sources */,
+				DCA32CEF1F8E77B9007E77C1 /* SMSearchTextField.m in Sources */,
+				DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */,
+				DCA32CF21F8E89E6007E77C1 /* SMCategoriesViewController.m in Sources */,
+				DCC93D761F8E413100F44DCD /* main.m in Sources */,
+				DCA32CEC1F8E5A07007E77C1 /* SMCustomSearchBarView.m in Sources */,
+				DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC93D891F8E413200F44DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC93D921F8E413200F44DCD /* DublinCityGuideTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC93D941F8E413200F44DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC93D9D1F8E413200F44DCD /* DublinCityGuideUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCC93D8F1F8E413200F44DCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC93D701F8E413100F44DCD /* DublinCityGuide */;
+			targetProxy = DCC93D8E1F8E413200F44DCD /* PBXContainerItemProxy */;
+		};
+		DCC93D9A1F8E413200F44DCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC93D701F8E413100F44DCD /* DublinCityGuide */;
+			targetProxy = DCC93D991F8E413200F44DCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCC93D7D1F8E413100F44DCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC93D7E1F8E413100F44DCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC93D851F8E413100F44DCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC93D861F8E413100F44DCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC93D9F1F8E413200F44DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCC93DA01F8E413200F44DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC93DA21F8E413200F44DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PMQKT6K8N;
+				INFOPLIST_FILE = DublinCityGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCC93DA31F8E413200F44DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PMQKT6K8N;
+				INFOPLIST_FILE = DublinCityGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DCC93DA51F8E413200F44DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4PMQKT6K8N;
+				INFOPLIST_FILE = DublinCityGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DublinCityGuide.app/DublinCityGuide";
+			};
+			name = Debug;
+		};
+		DCC93DA61F8E413200F44DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4PMQKT6K8N;
+				INFOPLIST_FILE = DublinCityGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DublinCityGuide.app/DublinCityGuide";
+			};
+			name = Release;
+		};
+		DCC93DA81F8E413200F44DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4PMQKT6K8N;
+				INFOPLIST_FILE = DublinCityGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DublinCityGuide;
+			};
+			name = Debug;
+		};
+		DCC93DA91F8E413200F44DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4PMQKT6K8N;
+				INFOPLIST_FILE = DublinCityGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DublinCityGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC93D6C1F8E413100F44DCD /* Build configuration list for PBXProject "DublinCityGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC93D9F1F8E413200F44DCD /* Debug */,
+				DCC93DA01F8E413200F44DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC93DA11F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC93DA21F8E413200F44DCD /* Debug */,
+				DCC93DA31F8E413200F44DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC93DA41F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC93DA51F8E413200F44DCD /* Debug */,
+				DCC93DA61F8E413200F44DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC93DA71F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC93DA81F8E413200F44DCD /* Debug */,
+				DCC93DA91F8E413200F44DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DCC93D801F8E413100F44DCD /* DublinCityGuide.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DCC93D811F8E413100F44DCD /* DublinCityGuide.xcdatamodel */,
+			);
+			currentVersion = DCC93D811F8E413100F44DCD /* DublinCityGuide.xcdatamodel */;
+			path = DublinCityGuide.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DCC93D691F8E413100F44DCD /* Project object */;
+}
