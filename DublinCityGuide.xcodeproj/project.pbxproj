@@ -15,6 +15,7 @@
 		DCA32CF81F8FA1FE007E77C1 /* SMCategoryLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CF71F8FA1FE007E77C1 /* SMCategoryLabel.m */; };
 		DCA32CFB1F8FA676007E77C1 /* SMCategoriesSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CFA1F8FA676007E77C1 /* SMCategoriesSearchViewController.m */; };
 		DCA32CFE1F8FD57B007E77C1 /* SMFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CFD1F8FD57B007E77C1 /* SMFavouritesViewController.m */; };
+		DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */; };
 		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
 		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
 		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
@@ -60,6 +61,8 @@
 		DCA32CFA1F8FA676007E77C1 /* SMCategoriesSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoriesSearchViewController.m; sourceTree = "<group>"; };
 		DCA32CFC1F8FD57B007E77C1 /* SMFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFavouritesViewController.h; sourceTree = "<group>"; };
 		DCA32CFD1F8FD57B007E77C1 /* SMFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFavouritesViewController.m; sourceTree = "<group>"; };
+		DCA32CFF1F8FD7CD007E77C1 /* SMAddLocationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAddLocationButton.h; sourceTree = "<group>"; };
+		DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAddLocationButton.m; sourceTree = "<group>"; };
 		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				DCA32CF41F8F9501007E77C1 /* SMCategoryViewCell.m */,
 				DCA32CF61F8FA1FE007E77C1 /* SMCategoryLabel.h */,
 				DCA32CF71F8FA1FE007E77C1 /* SMCategoryLabel.m */,
+				DCA32CFF1F8FD7CD007E77C1 /* SMAddLocationButton.h */,
+				DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				DCA32CEC1F8E5A07007E77C1 /* SMCustomView.m in Sources */,
 				DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */,
 				DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */,
+				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

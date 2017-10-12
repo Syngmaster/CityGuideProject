@@ -1,5 +1,5 @@
 //
-//  SMFavouritesViewController.h
+//  SMAddLocationButton.h
 //  DublinCityGuide
 //
 //  Created by Syngmaster on 12/10/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SMFavouritesViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface SMAddLocationButton : UIButton
 
 @end
