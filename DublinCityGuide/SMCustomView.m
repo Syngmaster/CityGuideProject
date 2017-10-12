@@ -1,14 +1,14 @@
 //
-//  SMCustomSearchBarView.m
+//  SMCustomView.m
 //  DublinCityGuide
 //
 //  Created by Syngmaster on 11/10/2017.
 //  Copyright © 2017 Syngmaster. All rights reserved.
 //
 
-#import "SMCustomSearchBarView.h"
+#import "SMCustomView.h"
 
-@implementation SMCustomSearchBarView
+@implementation SMCustomView
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -20,7 +20,7 @@
     self.layer.shadowOffset = CGSizeMake(1.0, 1.0);
     self.layer.shadowOpacity = 0.5;
     self.layer.shadowRadius = 1.0;
-
+    
 }
 
 

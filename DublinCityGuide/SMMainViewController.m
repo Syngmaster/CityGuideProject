@@ -8,7 +8,7 @@
 
 #import "SMMainViewController.h"
 
-@interface SMMainViewController ()
+@interface SMMainViewController () <UITextFieldDelegate>
 
 @end
 
@@ -17,11 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
-    
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem.title=@"";
 
@@ -32,14 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITextFieldDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self performSegueWithIdentifier:@"searchMenu" sender:nil];
 }
-*/
 
 @end

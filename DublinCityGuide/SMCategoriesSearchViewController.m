@@ -1,19 +1,19 @@
 //
-//  SMCategoriesViewController.m
+//  SMCategoriesSearchViewController.m
 //  DublinCityGuide
 //
-//  Created by Syngmaster on 11/10/2017.
+//  Created by Syngmaster on 12/10/2017.
 //  Copyright © 2017 Syngmaster. All rights reserved.
 //
 
-#import "SMCategoriesViewController.h"
+#import "SMCategoriesSearchViewController.h"
 #import "SMCategoryViewCell.h"
 
-@interface SMCategoriesViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SMCategoriesSearchViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
 
-@implementation SMCategoriesViewController
+@implementation SMCategoriesSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,15 +21,18 @@
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(popBack:)];
     backBtn.image = [[UIImage imageNamed:@"back_button.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = backBtn;
+
 }
+
+
+- (void)popBack:(UIBarButtonItem *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)popBack:(UIBarButtonItem *)sender {
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -41,7 +44,7 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    SMCategoryViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"categoryCell" forIndexPath:indexPath];
+    SMCategoryViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"categorySearchCell" forIndexPath:indexPath];
     if (!cell) {
         cell = [[SMCategoryViewCell alloc] init];
     }
@@ -54,8 +57,9 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(self.collectionView.bounds.size.width/3, self.collectionView.bounds.size.width/3);
+    return CGSizeMake(self.collectionView.bounds.size.height, self.collectionView.bounds.size.height);
     
 }
+
 
 @end
