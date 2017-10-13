@@ -10,6 +10,7 @@
 
 @interface SMFavouritesViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *homeWorkTableView;
+@property (weak, nonatomic) IBOutlet UITableView *favouriteTableView;
 
 @end

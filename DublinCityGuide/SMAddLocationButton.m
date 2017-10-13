@@ -23,10 +23,9 @@
     
     [self setImage:[UIImage imageNamed:@"add_new_location_button_pressed.png"] forState:UIControlStateHighlighted];
     
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
+    //self.contentMode = UIViewContentModeScaleAspectFill;
     
 }
+
+
 @end

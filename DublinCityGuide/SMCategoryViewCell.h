@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SMCategoryViewCell : UICollectionViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryCountLabel;
