@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class SMCategoriesSearchViewController;
+
+@protocol SMCategoriesSearchViewDelegate <NSObject>
+
+- (void)viewControllerDismissed:(SMCategoriesSearchViewController *)viewController;
+
+@end
+
 @interface SMCategoriesSearchViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) id <SMCategoriesSearchViewDelegate> delegate;
 
 @end

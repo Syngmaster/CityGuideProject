@@ -22,9 +22,7 @@
     self.layer.shadowRadius = 1.0;
     
     [self setImage:[UIImage imageNamed:@"add_new_location_button_pressed.png"] forState:UIControlStateHighlighted];
-    
-    //self.contentMode = UIViewContentModeScaleAspectFill;
-    
+        
 }
 
 
