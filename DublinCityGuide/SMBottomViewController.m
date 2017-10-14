@@ -12,6 +12,7 @@
 
 @property (assign, nonatomic) CGFloat minPositionY;
 @property (assign, nonatomic) CGFloat maxPositionY;
+@property (assign, nonatomic) CGFloat progress;
 
 @end
 
@@ -22,6 +23,7 @@
 
     self.maxPositionY = 70.0;
     self.minPositionY = [UIScreen mainScreen].bounds.size.height - 150;
+    self.progress = 0.0;
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
     pan.delegate = self;
@@ -49,7 +51,8 @@
     
     CGPoint translation = [sender translationInView:self.view];
     CGPoint velocity = [sender velocityInView:self.view];
-    
+    self.progress = MAX(self.progress, fabs([sender translationInView:self.view].y / (self.view.frame.size.width * 1.0)));
+
     CGFloat minY = CGRectGetMinY(self.view.frame);
     
     if ((minY + translation.y >= self.maxPositionY) &&(minY + translation.y <= self.minPositionY)) {
@@ -59,35 +62,50 @@
     
     if (sender.state == UIGestureRecognizerStateEnded) {
         
-        if (self.view.frame.origin.y == self.maxPositionY) {
+        /*CGFloat duration = velocity.y < 0 ? (double)((minY - self.maxPositionY) / -velocity.y) : (double)((self.minPositionY - minY)/velocity.y);
+        duration = duration > 1.3 ? 1 : duration;*/
+        CGFloat duration = 0.5;
+        
+
+        if (velocity.y >= 0) {
+            
+            if (self.progress > 0.07) {
+                
+                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
+ 
+            } else {
+                
+                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
+            }
             
         } else {
-            
+            if (self.progress > 0.07) {
+                
+                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
+                
+            } else {
+                
+                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
+            }
         }
         
-        
-        
-        CGFloat duration = velocity.y < 0 ? (double)((minY - self.maxPositionY) / -velocity.y) : (double)((self.minPositionY - minY)/velocity.y);
-        duration = duration > 1.3 ? 1 : duration;
-        
-        [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-            
-            if (velocity.y >= 0) {
-                self.view.frame = CGRectMake(0, self.minPositionY, self.view.frame.size.width, self.view.frame.size.height);
-            } else {
-                self.view.frame = CGRectMake(0, self.maxPositionY, self.view.frame.size.width, self.view.frame.size.height);
-            }
-            
-            
-        } completion:^(BOOL finished) {
-            
-            if (velocity.y < 0) {
-                self.tableView.scrollEnabled = YES;
-            }
-            
-        }];
+        self.progress = 0.0;
     }
     
+}
+
+- (void)moveViewAnimatableWithDuration:(CGFloat)duration velocity:(CGPoint)velocity toPosition:(CGFloat)yPosition {
+    
+    [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        self.view.frame = CGRectMake(0, self.minPositionY, self.view.frame.size.width, self.view.frame.size.height);
+        
+    } completion:^(BOOL finished) {
+        
+        if (velocity.y < 0) {
+            self.tableView.scrollEnabled = YES;
+        }
+        
+    }];
 }
 
 #pragma mark - UITableViewDataSource
