@@ -8,6 +8,7 @@
 
 #import "SMBottomViewController.h"
 #import "SMMapViewController.h"
+#import "SMCategoryDescriptionTableViewCell.h"
 
 @interface SMBottomViewController () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 
@@ -69,13 +70,11 @@
         if (velocity.y >= 0) {
             
             [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
-            [self animateMapViewAlpha];
 
             
         } else {
             
             [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
-            [self animateMapViewAlpha];
 
         }
         
@@ -100,6 +99,8 @@
         }
         
     }];
+    
+    [self animateMapViewAlpha];
 }
 
 - (void)animateMapViewAlpha {
@@ -109,7 +110,6 @@
     CGFloat yPosition = self.maxPositionY + 120;
     
     if (self.view.frame.origin.y <= yPosition) {
-        NSLog(@"%f", self.view.frame.origin.y - self.maxPositionY);
 
          [UIView animateWithDuration:0.4 animations:^{
          
@@ -130,19 +130,6 @@
 
     }
     
-    
-    /*
-    [UIView animateWithDuration:duration animations:^{
-       
-        if (velocity.y < 0) {
-            mapVC.mapView.alpha = 0.0;
-        } else {
-            mapVC.mapView.alpha = 1.0;
-        }
-        
-    }];*/
-    
-    
 }
 
 #pragma mark - UITableViewDataSource
@@ -153,17 +140,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    SMCategoryDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[SMCategoryDescriptionTableViewCell alloc] init];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Title %i", (int)indexPath.row];
     
     return cell;
 }
 
+
+#pragma mark - UITableViewDelegate
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 130.0;
+}
 
 #pragma mark - UIGestureRecognizerDelegate
 

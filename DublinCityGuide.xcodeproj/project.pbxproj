@@ -20,6 +20,9 @@
 		DCA32D0B1F8FE74C007E77C1 /* SMFavouritesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D0A1F8FE74C007E77C1 /* SMFavouritesViewCell.m */; };
 		DCA32D111F911BFC007E77C1 /* SMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D101F911BFC007E77C1 /* SMMapViewController.m */; };
 		DCA32D141F926768007E77C1 /* SMBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D131F926768007E77C1 /* SMBottomViewController.m */; };
+		DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */; };
+		DCA32D1A1F93B336007E77C1 /* SMRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D191F93B336007E77C1 /* SMRoundView.m */; };
+		DCA32D1D1F93B377007E77C1 /* SMRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */; };
 		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
 		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
 		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
@@ -75,6 +78,12 @@
 		DCA32D101F911BFC007E77C1 /* SMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMapViewController.m; sourceTree = "<group>"; };
 		DCA32D121F926768007E77C1 /* SMBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBottomViewController.h; sourceTree = "<group>"; };
 		DCA32D131F926768007E77C1 /* SMBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBottomViewController.m; sourceTree = "<group>"; };
+		DCA32D151F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		DCA32D181F93B336007E77C1 /* SMRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRoundView.h; sourceTree = "<group>"; };
+		DCA32D191F93B336007E77C1 /* SMRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRoundView.m; sourceTree = "<group>"; };
+		DCA32D1B1F93B377007E77C1 /* SMRectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRectangleView.h; sourceTree = "<group>"; };
+		DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRectangleView.m; sourceTree = "<group>"; };
 		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +151,10 @@
 				DCA32CF71F8FA1FE007E77C1 /* SMCategoryLabel.m */,
 				DCA32CFF1F8FD7CD007E77C1 /* SMAddLocationButton.h */,
 				DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */,
+				DCA32D181F93B336007E77C1 /* SMRoundView.h */,
+				DCA32D191F93B336007E77C1 /* SMRoundView.m */,
+				DCA32D1B1F93B377007E77C1 /* SMRectangleView.h */,
+				DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -155,6 +168,8 @@
 				DCA32D071F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m */,
 				DCA32D091F8FE74C007E77C1 /* SMFavouritesViewCell.h */,
 				DCA32D0A1F8FE74C007E77C1 /* SMFavouritesViewCell.m */,
+				DCA32D151F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.h */,
+				DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -396,6 +411,8 @@
 				DCA32CFB1F8FA676007E77C1 /* SMCategoriesSearchViewController.m in Sources */,
 				DCA32D141F926768007E77C1 /* SMBottomViewController.m in Sources */,
 				DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */,
+				DCA32D1D1F93B377007E77C1 /* SMRectangleView.m in Sources */,
+				DCA32D1A1F93B336007E77C1 /* SMRoundView.m in Sources */,
 				DCA32CF21F8E89E6007E77C1 /* SMCategoriesViewController.m in Sources */,
 				DCC93D761F8E413100F44DCD /* main.m in Sources */,
 				DCA32D081F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m in Sources */,
@@ -404,6 +421,7 @@
 				DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */,
 				DCA32D111F911BFC007E77C1 /* SMMapViewController.m in Sources */,
 				DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */,
+				DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */,
 				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
