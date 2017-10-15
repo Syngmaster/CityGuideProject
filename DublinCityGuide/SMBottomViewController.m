@@ -7,6 +7,7 @@
 //
 
 #import "SMBottomViewController.h"
+#import "SMMapViewController.h"
 
 @interface SMBottomViewController () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 
@@ -62,42 +63,35 @@
     
     if (sender.state == UIGestureRecognizerStateEnded) {
         
-        /*CGFloat duration = velocity.y < 0 ? (double)((minY - self.maxPositionY) / -velocity.y) : (double)((self.minPositionY - minY)/velocity.y);
-        duration = duration > 1.3 ? 1 : duration;*/
         CGFloat duration = 0.5;
         
 
         if (velocity.y >= 0) {
             
-            if (self.progress > 0.07) {
-                
-                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
- 
-            } else {
-                
-                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
-            }
+            [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
+            [self animateMapViewAlpha];
+
             
         } else {
-            if (self.progress > 0.07) {
-                
-                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
-                
-            } else {
-                
-                [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
-            }
+            
+            [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
+            [self animateMapViewAlpha];
+
         }
         
         self.progress = 0.0;
+
     }
+    
+    [self animateMapViewAlpha];
+
     
 }
 
 - (void)moveViewAnimatableWithDuration:(CGFloat)duration velocity:(CGPoint)velocity toPosition:(CGFloat)yPosition {
     
     [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        self.view.frame = CGRectMake(0, self.minPositionY, self.view.frame.size.width, self.view.frame.size.height);
+        self.view.frame = CGRectMake(0, yPosition, self.view.frame.size.width, self.view.frame.size.height);
         
     } completion:^(BOOL finished) {
         
@@ -106,6 +100,49 @@
         }
         
     }];
+}
+
+- (void)animateMapViewAlpha {
+    
+    SMMapViewController *mapVC = (SMMapViewController *)self.parentViewController;
+    
+    CGFloat yPosition = self.maxPositionY + 120;
+    
+    if (self.view.frame.origin.y <= yPosition) {
+        NSLog(@"%f", self.view.frame.origin.y - self.maxPositionY);
+
+         [UIView animateWithDuration:0.4 animations:^{
+         
+             mapVC.mapView.alpha = (self.view.frame.origin.y - self.maxPositionY)/100;
+             mapVC.leftConstrain.constant = 5 + (self.view.frame.origin.y - self.maxPositionY)/12.0;
+             mapVC.rightConstrain.constant = 6 + (self.view.frame.origin.y - self.maxPositionY)/13.3;
+
+         }];
+        
+    } else {
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            
+            mapVC.mapView.alpha = 1.0;
+            mapVC.leftConstrain.constant = 15.0;
+            mapVC.rightConstrain.constant = 15.0;
+        }];
+
+    }
+    
+    
+    /*
+    [UIView animateWithDuration:duration animations:^{
+       
+        if (velocity.y < 0) {
+            mapVC.mapView.alpha = 0.0;
+        } else {
+            mapVC.mapView.alpha = 1.0;
+        }
+        
+    }];*/
+    
+    
 }
 
 #pragma mark - UITableViewDataSource

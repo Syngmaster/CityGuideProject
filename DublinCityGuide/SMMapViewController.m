@@ -19,7 +19,8 @@
     [super viewDidLoad];
     
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(popBack:)];
-    backBtn.image = [[UIImage imageNamed:@"back_button.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //backBtn.image = [[UIImage imageNamed:@"back_button.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    backBtn.image = [[UIImage alloc] init];
     self.navigationItem.leftBarButtonItem = backBtn;
     
 }
