@@ -20,5 +20,7 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) id <SMCategoriesSearchViewDelegate> delegate;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *animatableLeftConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *animatableRightConstraint;
 
 @end

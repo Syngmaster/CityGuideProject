@@ -10,8 +10,11 @@
 #import "SMLocationModel.h"
 #import "SMCategoriesViewController.h"
 #import "SMCategoriesSearchViewController.h"
+
 #import "SMPushAnimator.h"
 #import "SMPopAnimator.h"
+#import "SMCategorySearchPushAnimator.h"
+#import "SMCategorySearchPopAnimator.h"
 
 @interface SMMainViewController () <UITextFieldDelegate, MKMapViewDelegate, SMCategoriesViewDelegate, SMCategoriesSearchViewDelegate, UINavigationControllerDelegate>
 
@@ -122,10 +125,17 @@
         if (operation == UINavigationControllerOperationPop)
             return [[SMPopAnimator alloc] init];
         
-    } else {
+    } else if (([fromVC isMemberOfClass:[SMMainViewController class]] && [toVC isMemberOfClass:[SMCategoriesSearchViewController class]]) ||
+               ([toVC isMemberOfClass:[SMMainViewController class]] && [fromVC isMemberOfClass:[SMCategoriesSearchViewController class]])) {
         
-        return nil;
+        if (operation == UINavigationControllerOperationPush)
+            return [[SMCategorySearchPushAnimator alloc] init];
+        
+        if (operation == UINavigationControllerOperationPop)
+            return [[SMCategorySearchPopAnimator alloc] init];
 
+    } else {
+        return nil;
     }
     
     return nil;

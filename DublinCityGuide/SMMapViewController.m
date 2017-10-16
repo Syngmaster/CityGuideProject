@@ -30,8 +30,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    //[self addBottomVC];
-    [self addDescriptionVC];
+    [self addBottomVC];
+    //[self addDescriptionVC];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,8 +42,8 @@
 - (void)tapAction:(UITapGestureRecognizer *)sender {
     
     
-    //[self removeBottomVC];
-    [self removeDescriptionVC];
+    [self removeBottomVC];
+    //[self removeDescriptionVC];
 }
 
 - (void)popBack:(UIBarButtonItem *)sender {

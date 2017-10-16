@@ -8,10 +8,6 @@
 
 #import "SMPushAnimator.h"
 
-@interface SMPushAnimator () 
-
-@end
-
 @implementation SMPushAnimator
 
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext {
