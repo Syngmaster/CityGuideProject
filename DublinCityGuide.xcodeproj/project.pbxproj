@@ -26,6 +26,8 @@
 		DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */; };
 		DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */; };
 		DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */; };
+		DCA32D2A1F951E88007E77C1 /* SMPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D291F951E88007E77C1 /* SMPushAnimator.m */; };
+		DCA32D2D1F9520A1007E77C1 /* SMPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D2C1F9520A1007E77C1 /* SMPopAnimator.m */; };
 		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
 		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
 		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
@@ -93,6 +95,10 @@
 		DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBottomTabView.m; sourceTree = "<group>"; };
 		DCA32D241F94E0FA007E77C1 /* SMViewForButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMViewForButton.h; sourceTree = "<group>"; };
 		DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMViewForButton.m; sourceTree = "<group>"; };
+		DCA32D281F951E88007E77C1 /* SMPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPushAnimator.h; sourceTree = "<group>"; };
+		DCA32D291F951E88007E77C1 /* SMPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPushAnimator.m; sourceTree = "<group>"; };
+		DCA32D2B1F9520A1007E77C1 /* SMPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPopAnimator.h; sourceTree = "<group>"; };
+		DCA32D2C1F9520A1007E77C1 /* SMPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPopAnimator.m; sourceTree = "<group>"; };
 		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +193,17 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		DCA32D271F951E58007E77C1 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				DCA32D281F951E88007E77C1 /* SMPushAnimator.h */,
+				DCA32D291F951E88007E77C1 /* SMPushAnimator.m */,
+				DCA32D2B1F9520A1007E77C1 /* SMPopAnimator.h */,
+				DCA32D2C1F9520A1007E77C1 /* SMPopAnimator.m */,
+			);
+			name = Animators;
+			sourceTree = "<group>";
+		};
 		DCC93D681F8E413100F44DCD = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +272,7 @@
 		DCC93DAD1F8E415E00F44DCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DCA32D271F951E58007E77C1 /* Animators */,
 				DCC93DAA1F8E415900F44DCD /* SMLocationModel.h */,
 				DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */,
 			);
@@ -421,6 +439,7 @@
 				DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */,
 				DCC93D821F8E413100F44DCD /* DublinCityGuide.xcdatamodeld in Sources */,
 				DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */,
+				DCA32D2D1F9520A1007E77C1 /* SMPopAnimator.m in Sources */,
 				DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */,
 				DCA32CFE1F8FD57B007E77C1 /* SMFavouritesViewController.m in Sources */,
 				DCA32D0B1F8FE74C007E77C1 /* SMFavouritesViewCell.m in Sources */,
@@ -440,6 +459,7 @@
 				DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */,
 				DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */,
 				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,
+				DCA32D2A1F951E88007E77C1 /* SMPushAnimator.m in Sources */,
 				DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

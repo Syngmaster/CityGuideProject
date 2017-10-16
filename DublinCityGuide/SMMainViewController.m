@@ -10,8 +10,10 @@
 #import "SMLocationModel.h"
 #import "SMCategoriesViewController.h"
 #import "SMCategoriesSearchViewController.h"
+#import "SMPushAnimator.h"
+#import "SMPopAnimator.h"
 
-@interface SMMainViewController () <UITextFieldDelegate, MKMapViewDelegate, SMCategoriesViewDelegate, SMCategoriesSearchViewDelegate>
+@interface SMMainViewController () <UITextFieldDelegate, MKMapViewDelegate, SMCategoriesViewDelegate, SMCategoriesSearchViewDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) SMLocationModel *homeLocation;
 
@@ -32,7 +34,7 @@
     model.coordinate = CLLocationCoordinate2DMake(53.362731, -6.278381);
     
     self.homeLocation = model;
-    
+    self.navigationController.delegate = self;
     self.mapView.delegate = self;
     //[self.mapView addAnnotation:model];
 
@@ -103,7 +105,31 @@
 }
 
 
+#pragma mark - UINavigationControllerDelegate
 
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UIViewController*)fromVC
+                                                 toViewController:(UIViewController*)toVC
+{
+    
+    if (([fromVC isMemberOfClass:[SMMainViewController class]] && [toVC isMemberOfClass:[SMCategoriesViewController class]]) ||
+        ([toVC isMemberOfClass:[SMMainViewController class]] && [fromVC isMemberOfClass:[SMCategoriesViewController class]])) {
+        
+        if (operation == UINavigationControllerOperationPush)
+            return [[SMPushAnimator alloc] init];
+        
+        if (operation == UINavigationControllerOperationPop)
+            return [[SMPopAnimator alloc] init];
+        
+    } else {
+        
+        return nil;
+
+    }
+    
+    return nil;
+}
 
 
 @end
