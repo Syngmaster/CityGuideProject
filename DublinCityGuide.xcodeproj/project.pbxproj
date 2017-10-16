@@ -23,6 +23,9 @@
 		DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */; };
 		DCA32D1A1F93B336007E77C1 /* SMRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D191F93B336007E77C1 /* SMRoundView.m */; };
 		DCA32D1D1F93B377007E77C1 /* SMRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */; };
+		DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */; };
+		DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */; };
+		DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */; };
 		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
 		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
 		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
@@ -84,6 +87,12 @@
 		DCA32D191F93B336007E77C1 /* SMRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRoundView.m; sourceTree = "<group>"; };
 		DCA32D1B1F93B377007E77C1 /* SMRectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRectangleView.h; sourceTree = "<group>"; };
 		DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRectangleView.m; sourceTree = "<group>"; };
+		DCA32D1E1F93BF94007E77C1 /* SMLocationDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLocationDescriptionViewController.h; sourceTree = "<group>"; };
+		DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLocationDescriptionViewController.m; sourceTree = "<group>"; };
+		DCA32D211F93CA00007E77C1 /* SMBottomTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBottomTabView.h; sourceTree = "<group>"; };
+		DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBottomTabView.m; sourceTree = "<group>"; };
+		DCA32D241F94E0FA007E77C1 /* SMViewForButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMViewForButton.h; sourceTree = "<group>"; };
+		DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMViewForButton.m; sourceTree = "<group>"; };
 		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +164,10 @@
 				DCA32D191F93B336007E77C1 /* SMRoundView.m */,
 				DCA32D1B1F93B377007E77C1 /* SMRectangleView.h */,
 				DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */,
+				DCA32D211F93CA00007E77C1 /* SMBottomTabView.h */,
+				DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */,
+				DCA32D241F94E0FA007E77C1 /* SMViewForButton.h */,
+				DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -263,6 +276,8 @@
 				DCA32D101F911BFC007E77C1 /* SMMapViewController.m */,
 				DCA32D121F926768007E77C1 /* SMBottomViewController.h */,
 				DCA32D131F926768007E77C1 /* SMBottomViewController.m */,
+				DCA32D1E1F93BF94007E77C1 /* SMLocationDescriptionViewController.h */,
+				DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -405,6 +420,8 @@
 			files = (
 				DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */,
 				DCC93D821F8E413100F44DCD /* DublinCityGuide.xcdatamodeld in Sources */,
+				DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */,
+				DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */,
 				DCA32CFE1F8FD57B007E77C1 /* SMFavouritesViewController.m in Sources */,
 				DCA32D0B1F8FE74C007E77C1 /* SMFavouritesViewCell.m in Sources */,
 				DCA32CEF1F8E77B9007E77C1 /* SMSearchTextField.m in Sources */,
@@ -423,6 +440,7 @@
 				DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */,
 				DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */,
 				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,
+				DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

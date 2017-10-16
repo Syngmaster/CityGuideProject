@@ -35,7 +35,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
        
         CGRect frame = self.view.frame;
         CGFloat yComponent = self.minPositionY;
@@ -43,6 +43,7 @@
         
     }];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
