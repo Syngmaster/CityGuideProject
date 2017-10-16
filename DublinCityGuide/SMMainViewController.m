@@ -7,8 +7,13 @@
 //
 
 #import "SMMainViewController.h"
+#import "SMLocationModel.h"
+#import "SMCategoriesViewController.h"
+#import "SMCategoriesSearchViewController.h"
 
-@interface SMMainViewController ()
+@interface SMMainViewController () <UITextFieldDelegate, MKMapViewDelegate, SMCategoriesViewDelegate, SMCategoriesSearchViewDelegate>
+
+@property (strong, nonatomic) SMLocationModel *homeLocation;
 
 @end
 
@@ -17,13 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
-    
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem.title=@"";
+    SMLocationModel *model = [[SMLocationModel alloc] init];
+    model.locationAddress = @"29 Norfolk Road, Dublin7, Dublin";
+    model.locationName = @"My home";
+    model.locationPhoneNumber = @"0899510834";
+    model.locationWorkingHours = @"Open till 22:00";
+    model.coordinate = CLLocationCoordinate2DMake(53.362731, -6.278381);
+    
+    self.homeLocation = model;
+    
+    self.mapView.delegate = self;
+    //[self.mapView addAnnotation:model];
 
 }
 
@@ -32,14 +43,67 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITextFieldDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self performSegueWithIdentifier:@"searchMenu" sender:nil];
 }
-*/
+
+#pragma mark - MKMapViewDelegate
+
+- (nullable MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+    
+    static NSString *identifier = @"PinView";
+    
+    MKAnnotationView *pin = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    
+    
+    if (!pin) {
+        pin = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        
+        pin.draggable = YES;
+        pin.image = [UIImage imageNamed:@"pin_point.png"];
+    } else {
+        pin.annotation = annotation;
+    }
+    
+    return  pin;
+}
+
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+    
+
+}
+
+
+- (IBAction)showMenuAction:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"menu" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"menu"]) {
+        SMCategoriesViewController *dvc = segue.destinationViewController;
+        dvc.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"searchMenu"]) {
+        SMCategoriesSearchViewController *dvc = segue.destinationViewController;
+        dvc.delegate = self;
+    }
+    
+}
+
+
+- (void)viewControllerDismissed:(UIViewController *)viewController {
+    [self.mapView addAnnotation:self.homeLocation];
+}
+
+
+
+
 
 @end

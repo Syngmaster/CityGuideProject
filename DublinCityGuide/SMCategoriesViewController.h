@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class SMCategoriesViewController;
+
+@protocol SMCategoriesViewDelegate <NSObject>
+
+- (void)viewControllerDismissed:(SMCategoriesViewController *)viewController;
+
+@end
+
 @interface SMCategoriesViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) id <SMCategoriesViewDelegate> delegate;
 
 @end

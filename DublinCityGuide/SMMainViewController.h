@@ -13,5 +13,6 @@
 @interface SMMainViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)showMenuAction:(UIButton *)sender;
 
 @end

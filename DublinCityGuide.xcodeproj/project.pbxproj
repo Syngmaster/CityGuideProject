@@ -8,9 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DCA32CE81F8E58A0007E77C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA32CE61F8E4469007E77C1 /* MapKit.framework */; };
-		DCA32CEC1F8E5A07007E77C1 /* SMCustomSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEB1F8E5A07007E77C1 /* SMCustomSearchBarView.m */; };
+		DCA32CEC1F8E5A07007E77C1 /* SMCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEB1F8E5A07007E77C1 /* SMCustomView.m */; };
 		DCA32CEF1F8E77B9007E77C1 /* SMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */; };
 		DCA32CF21F8E89E6007E77C1 /* SMCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CF11F8E89E6007E77C1 /* SMCategoriesViewController.m */; };
+		DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CF41F8F9501007E77C1 /* SMCategoryViewCell.m */; };
+		DCA32CF81F8FA1FE007E77C1 /* SMCategoryLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CF71F8FA1FE007E77C1 /* SMCategoryLabel.m */; };
+		DCA32CFB1F8FA676007E77C1 /* SMCategoriesSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CFA1F8FA676007E77C1 /* SMCategoriesSearchViewController.m */; };
+		DCA32CFE1F8FD57B007E77C1 /* SMFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CFD1F8FD57B007E77C1 /* SMFavouritesViewController.m */; };
+		DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */; };
+		DCA32D081F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D071F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m */; };
+		DCA32D0B1F8FE74C007E77C1 /* SMFavouritesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D0A1F8FE74C007E77C1 /* SMFavouritesViewCell.m */; };
+		DCA32D111F911BFC007E77C1 /* SMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D101F911BFC007E77C1 /* SMMapViewController.m */; };
+		DCA32D141F926768007E77C1 /* SMBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D131F926768007E77C1 /* SMBottomViewController.m */; };
+		DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */; };
+		DCA32D1A1F93B336007E77C1 /* SMRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D191F93B336007E77C1 /* SMRoundView.m */; };
+		DCA32D1D1F93B377007E77C1 /* SMRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */; };
+		DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */; };
+		DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */; };
+		DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */; };
 		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
 		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
 		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
@@ -42,12 +57,42 @@
 
 /* Begin PBXFileReference section */
 		DCA32CE61F8E4469007E77C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		DCA32CEA1F8E5A07007E77C1 /* SMCustomSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCustomSearchBarView.h; sourceTree = "<group>"; };
-		DCA32CEB1F8E5A07007E77C1 /* SMCustomSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCustomSearchBarView.m; sourceTree = "<group>"; };
+		DCA32CEA1F8E5A07007E77C1 /* SMCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCustomView.h; sourceTree = "<group>"; };
+		DCA32CEB1F8E5A07007E77C1 /* SMCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCustomView.m; sourceTree = "<group>"; };
 		DCA32CED1F8E77B9007E77C1 /* SMSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSearchTextField.h; sourceTree = "<group>"; };
 		DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSearchTextField.m; sourceTree = "<group>"; };
 		DCA32CF01F8E89E6007E77C1 /* SMCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoriesViewController.h; sourceTree = "<group>"; };
 		DCA32CF11F8E89E6007E77C1 /* SMCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoriesViewController.m; sourceTree = "<group>"; };
+		DCA32CF31F8F9501007E77C1 /* SMCategoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryViewCell.h; sourceTree = "<group>"; };
+		DCA32CF41F8F9501007E77C1 /* SMCategoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryViewCell.m; sourceTree = "<group>"; };
+		DCA32CF61F8FA1FE007E77C1 /* SMCategoryLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryLabel.h; sourceTree = "<group>"; };
+		DCA32CF71F8FA1FE007E77C1 /* SMCategoryLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryLabel.m; sourceTree = "<group>"; };
+		DCA32CF91F8FA676007E77C1 /* SMCategoriesSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoriesSearchViewController.h; sourceTree = "<group>"; };
+		DCA32CFA1F8FA676007E77C1 /* SMCategoriesSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoriesSearchViewController.m; sourceTree = "<group>"; };
+		DCA32CFC1F8FD57B007E77C1 /* SMFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFavouritesViewController.h; sourceTree = "<group>"; };
+		DCA32CFD1F8FD57B007E77C1 /* SMFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFavouritesViewController.m; sourceTree = "<group>"; };
+		DCA32CFF1F8FD7CD007E77C1 /* SMAddLocationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAddLocationButton.h; sourceTree = "<group>"; };
+		DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAddLocationButton.m; sourceTree = "<group>"; };
+		DCA32D061F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMHomeWorkAddressViewCell.h; sourceTree = "<group>"; };
+		DCA32D071F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMHomeWorkAddressViewCell.m; sourceTree = "<group>"; };
+		DCA32D091F8FE74C007E77C1 /* SMFavouritesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFavouritesViewCell.h; sourceTree = "<group>"; };
+		DCA32D0A1F8FE74C007E77C1 /* SMFavouritesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFavouritesViewCell.m; sourceTree = "<group>"; };
+		DCA32D0F1F911BFC007E77C1 /* SMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMapViewController.h; sourceTree = "<group>"; };
+		DCA32D101F911BFC007E77C1 /* SMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMapViewController.m; sourceTree = "<group>"; };
+		DCA32D121F926768007E77C1 /* SMBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBottomViewController.h; sourceTree = "<group>"; };
+		DCA32D131F926768007E77C1 /* SMBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBottomViewController.m; sourceTree = "<group>"; };
+		DCA32D151F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		DCA32D181F93B336007E77C1 /* SMRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRoundView.h; sourceTree = "<group>"; };
+		DCA32D191F93B336007E77C1 /* SMRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRoundView.m; sourceTree = "<group>"; };
+		DCA32D1B1F93B377007E77C1 /* SMRectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRectangleView.h; sourceTree = "<group>"; };
+		DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRectangleView.m; sourceTree = "<group>"; };
+		DCA32D1E1F93BF94007E77C1 /* SMLocationDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLocationDescriptionViewController.h; sourceTree = "<group>"; };
+		DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLocationDescriptionViewController.m; sourceTree = "<group>"; };
+		DCA32D211F93CA00007E77C1 /* SMBottomTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBottomTabView.h; sourceTree = "<group>"; };
+		DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBottomTabView.m; sourceTree = "<group>"; };
+		DCA32D241F94E0FA007E77C1 /* SMViewForButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMViewForButton.h; sourceTree = "<group>"; };
+		DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMViewForButton.m; sourceTree = "<group>"; };
 		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,12 +151,40 @@
 		DCA32CE91F8E59E9007E77C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DCA32CEA1F8E5A07007E77C1 /* SMCustomSearchBarView.h */,
-				DCA32CEB1F8E5A07007E77C1 /* SMCustomSearchBarView.m */,
+				DCA32D021F8FE6DB007E77C1 /* Cell */,
+				DCA32CEA1F8E5A07007E77C1 /* SMCustomView.h */,
+				DCA32CEB1F8E5A07007E77C1 /* SMCustomView.m */,
 				DCA32CED1F8E77B9007E77C1 /* SMSearchTextField.h */,
 				DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */,
+				DCA32CF61F8FA1FE007E77C1 /* SMCategoryLabel.h */,
+				DCA32CF71F8FA1FE007E77C1 /* SMCategoryLabel.m */,
+				DCA32CFF1F8FD7CD007E77C1 /* SMAddLocationButton.h */,
+				DCA32D001F8FD7CD007E77C1 /* SMAddLocationButton.m */,
+				DCA32D181F93B336007E77C1 /* SMRoundView.h */,
+				DCA32D191F93B336007E77C1 /* SMRoundView.m */,
+				DCA32D1B1F93B377007E77C1 /* SMRectangleView.h */,
+				DCA32D1C1F93B377007E77C1 /* SMRectangleView.m */,
+				DCA32D211F93CA00007E77C1 /* SMBottomTabView.h */,
+				DCA32D221F93CA00007E77C1 /* SMBottomTabView.m */,
+				DCA32D241F94E0FA007E77C1 /* SMViewForButton.h */,
+				DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		DCA32D021F8FE6DB007E77C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DCA32CF31F8F9501007E77C1 /* SMCategoryViewCell.h */,
+				DCA32CF41F8F9501007E77C1 /* SMCategoryViewCell.m */,
+				DCA32D061F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.h */,
+				DCA32D071F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m */,
+				DCA32D091F8FE74C007E77C1 /* SMFavouritesViewCell.h */,
+				DCA32D0A1F8FE74C007E77C1 /* SMFavouritesViewCell.m */,
+				DCA32D151F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.h */,
+				DCA32D161F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		DCC93D681F8E413100F44DCD = {
@@ -195,6 +268,16 @@
 				DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */,
 				DCA32CF01F8E89E6007E77C1 /* SMCategoriesViewController.h */,
 				DCA32CF11F8E89E6007E77C1 /* SMCategoriesViewController.m */,
+				DCA32CF91F8FA676007E77C1 /* SMCategoriesSearchViewController.h */,
+				DCA32CFA1F8FA676007E77C1 /* SMCategoriesSearchViewController.m */,
+				DCA32CFC1F8FD57B007E77C1 /* SMFavouritesViewController.h */,
+				DCA32CFD1F8FD57B007E77C1 /* SMFavouritesViewController.m */,
+				DCA32D0F1F911BFC007E77C1 /* SMMapViewController.h */,
+				DCA32D101F911BFC007E77C1 /* SMMapViewController.m */,
+				DCA32D121F926768007E77C1 /* SMBottomViewController.h */,
+				DCA32D131F926768007E77C1 /* SMBottomViewController.m */,
+				DCA32D1E1F93BF94007E77C1 /* SMLocationDescriptionViewController.h */,
+				DCA32D1F1F93BF94007E77C1 /* SMLocationDescriptionViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -337,12 +420,27 @@
 			files = (
 				DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */,
 				DCC93D821F8E413100F44DCD /* DublinCityGuide.xcdatamodeld in Sources */,
+				DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */,
+				DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */,
+				DCA32CFE1F8FD57B007E77C1 /* SMFavouritesViewController.m in Sources */,
+				DCA32D0B1F8FE74C007E77C1 /* SMFavouritesViewCell.m in Sources */,
 				DCA32CEF1F8E77B9007E77C1 /* SMSearchTextField.m in Sources */,
+				DCA32CFB1F8FA676007E77C1 /* SMCategoriesSearchViewController.m in Sources */,
+				DCA32D141F926768007E77C1 /* SMBottomViewController.m in Sources */,
 				DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */,
+				DCA32D1D1F93B377007E77C1 /* SMRectangleView.m in Sources */,
+				DCA32D1A1F93B336007E77C1 /* SMRoundView.m in Sources */,
 				DCA32CF21F8E89E6007E77C1 /* SMCategoriesViewController.m in Sources */,
 				DCC93D761F8E413100F44DCD /* main.m in Sources */,
-				DCA32CEC1F8E5A07007E77C1 /* SMCustomSearchBarView.m in Sources */,
+				DCA32D081F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m in Sources */,
+				DCA32CF81F8FA1FE007E77C1 /* SMCategoryLabel.m in Sources */,
+				DCA32CEC1F8E5A07007E77C1 /* SMCustomView.m in Sources */,
 				DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */,
+				DCA32D111F911BFC007E77C1 /* SMMapViewController.m in Sources */,
+				DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */,
+				DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */,
+				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,
+				DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
