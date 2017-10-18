@@ -25,9 +25,16 @@
     [fromViewController.view layoutIfNeeded];
 
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        //fromViewController.view.alpha = 0.3;
-        fromViewController.animatableLeftConstraint.constant = 16.0;
-        fromViewController.animatableRightConstraint.constant = 17.0;
+
+        fromViewController.animatableLeftConstraint.constant = 24.0;
+        fromViewController.animatableRightConstraint.constant = 25.0;
+        fromViewController.collectionView.alpha = 0.0;
+
+        fromViewController.view.alpha = 0.0;
+        
+        CGRect oldFrame = fromViewController.view.frame;
+        fromViewController.view.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y - 200, oldFrame.size.width, oldFrame.size.height);
+
         [fromViewController.view layoutIfNeeded];
 
     } completion:^(BOOL finished) {

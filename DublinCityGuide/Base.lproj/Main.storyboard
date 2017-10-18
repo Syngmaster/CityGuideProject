@@ -100,7 +100,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3ai-ND-4JQ">
-                        <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="GVv-XB-6hC" customClass="SMCustomView">
                             <rect key="frame" x="16.5" y="0.0" width="342" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,7 +331,6 @@
                             <constraint firstItem="1nI-3Q-Me4" firstAttribute="top" secondItem="QHF-Wp-ehT" secondAttribute="top" id="oBq-Mn-MrZ"/>
                             <constraint firstItem="t3l-Yl-HAd" firstAttribute="leading" secondItem="QHF-Wp-ehT" secondAttribute="leading" constant="5" id="oi8-mz-kXY"/>
                             <constraint firstAttribute="trailing" secondItem="cJy-7d-muz" secondAttribute="trailing" constant="6" id="rzC-Bu-M2n"/>
-                            <constraint firstItem="Rnz-y8-Q2j" firstAttribute="centerX" secondItem="QHF-Wp-ehT" secondAttribute="centerX" id="xg3-JH-yCW"/>
                             <constraint firstItem="9pk-l0-6fp" firstAttribute="top" secondItem="PuJ-xF-iYI" secondAttribute="bottom" constant="10" id="xpJ-1m-iBr"/>
                             <constraint firstItem="cJy-7d-muz" firstAttribute="top" secondItem="7sJ-H8-oKM" secondAttribute="bottom" constant="10" id="zlW-gi-fd3"/>
                         </constraints>
@@ -373,7 +371,7 @@
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="QWp-jL-L3b" id="MII-1W-0g9"/>
+                                            <outlet property="delegate" destination="QWp-jL-L3b" id="vrD-pH-Tx3"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -469,11 +467,12 @@
                         <outlet property="animatableLeftConstraint" destination="Fdd-j6-CHW" id="amc-CH-CSv"/>
                         <outlet property="animatableRightConstraint" destination="Vb1-fz-yKG" id="A7O-D5-rXK"/>
                         <outlet property="collectionView" destination="GeP-Um-cDw" id="lfl-dD-O3b"/>
+                        <outlet property="searchTextField" destination="xDf-yl-LY5" id="uvP-bu-9ok"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1FX-tE-YUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930.4000000000001" y="415.14242878560725"/>
+            <point key="canvasLocation" x="2510" y="424"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="xu5-Y3-4lV">
@@ -538,7 +537,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swo-17-eAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2831.25" y="118.30985915492958"/>
+            <point key="canvasLocation" x="3391" y="123"/>
         </scene>
         <!--Bottom View Controller-->
         <scene sceneID="c7H-pe-TGH">
@@ -668,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRe-qd-SVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3553" y="-181"/>
+            <point key="canvasLocation" x="4154" y="-185"/>
         </scene>
         <!--Location Description View Controller-->
         <scene sceneID="kW7-oC-UCB">
@@ -984,7 +983,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNL-Lf-uTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3552.8000000000002" y="523.98800599700155"/>
+            <point key="canvasLocation" x="4153" y="549"/>
         </scene>
         <!--Categories View Controller-->
         <scene sceneID="Rok-3c-BTo">
@@ -1098,7 +1097,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RYQ-0D-xvO" secondAttribute="trailing" constant="6" id="0Zh-Sw-Ndb"/>
                             <constraint firstItem="UUx-hz-ebg" firstAttribute="top" secondItem="SLz-cG-uOI" secondAttribute="bottom" constant="30" id="55A-Yx-ODJ"/>
@@ -1119,7 +1118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8l-5W-qZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="-303"/>
+            <point key="canvasLocation" x="2511" y="-292"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1dR-Tw-RdC">

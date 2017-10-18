@@ -9,7 +9,7 @@
 #import "SMCategoriesSearchViewController.h"
 #import "SMCategoryViewCell.h"
 
-@interface SMCategoriesSearchViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SMCategoriesSearchViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate>
 
 @end
 
@@ -22,6 +22,7 @@
     backBtn.image = [[UIImage imageNamed:@"back_button.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = backBtn;
 
+    
 }
 
 
@@ -67,5 +68,12 @@
     
 
 }
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+}
+
 
 @end

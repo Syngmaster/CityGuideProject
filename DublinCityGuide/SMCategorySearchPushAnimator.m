@@ -12,7 +12,7 @@
 @implementation SMCategorySearchPushAnimator
 
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext {
-    return 0.3;
+    return 0.4;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
@@ -22,15 +22,22 @@
     
     [[transitionContext containerView] addSubview:toViewController.view];
     
-    //toViewController.view.alpha = 0.3;
-    toViewController.animatableLeftConstraint.constant = 16.0;
-    toViewController.animatableRightConstraint.constant = 17.0;
+    //toViewController.view.alpha = 0.0;
+    //toViewController.view.transform = CGAffineTransformMakeScale(1.1, 1.1);
+
+    toViewController.animatableLeftConstraint.constant = 24.0;
+    toViewController.animatableRightConstraint.constant = 25.0;
+    toViewController.view.alpha = 0.0;
+    CGRect oldFrame = toViewController.collectionView.frame;
+    toViewController.collectionView.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y - 200, oldFrame.size.width, oldFrame.size.height);
     [toViewController.view layoutIfNeeded];
 
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        //toViewController.view.alpha = 1.0;
+
         toViewController.animatableLeftConstraint.constant = 5.0;
         toViewController.animatableRightConstraint.constant = 6.0;
+        toViewController.view.alpha = 1.0;
+        toViewController.collectionView.frame = oldFrame;
         [toViewController.view layoutIfNeeded];
 
     } completion:^(BOOL finished) {
