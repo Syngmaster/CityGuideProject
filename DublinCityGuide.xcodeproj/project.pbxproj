@@ -28,6 +28,8 @@
 		DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D251F94E0FA007E77C1 /* SMViewForButton.m */; };
 		DCA32D2A1F951E88007E77C1 /* SMPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D291F951E88007E77C1 /* SMPushAnimator.m */; };
 		DCA32D2D1F9520A1007E77C1 /* SMPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D2C1F9520A1007E77C1 /* SMPopAnimator.m */; };
+		DCA32D301F95303E007E77C1 /* SMCategorySearchPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D2F1F95303E007E77C1 /* SMCategorySearchPushAnimator.m */; };
+		DCA32D331F953054007E77C1 /* SMCategorySearchPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32D321F953054007E77C1 /* SMCategorySearchPopAnimator.m */; };
 		DCC93D761F8E413100F44DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D751F8E413100F44DCD /* main.m */; };
 		DCC93D791F8E413100F44DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D781F8E413100F44DCD /* AppDelegate.m */; };
 		DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC93D7D1F8E413100F44DCD /* Main.storyboard */; };
@@ -99,6 +101,10 @@
 		DCA32D291F951E88007E77C1 /* SMPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPushAnimator.m; sourceTree = "<group>"; };
 		DCA32D2B1F9520A1007E77C1 /* SMPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPopAnimator.h; sourceTree = "<group>"; };
 		DCA32D2C1F9520A1007E77C1 /* SMPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPopAnimator.m; sourceTree = "<group>"; };
+		DCA32D2E1F95303E007E77C1 /* SMCategorySearchPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategorySearchPushAnimator.h; sourceTree = "<group>"; };
+		DCA32D2F1F95303E007E77C1 /* SMCategorySearchPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategorySearchPushAnimator.m; sourceTree = "<group>"; };
+		DCA32D311F953054007E77C1 /* SMCategorySearchPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategorySearchPopAnimator.h; sourceTree = "<group>"; };
+		DCA32D321F953054007E77C1 /* SMCategorySearchPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategorySearchPopAnimator.m; sourceTree = "<group>"; };
 		DCC93D711F8E413100F44DCD /* DublinCityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DublinCityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC93D751F8E413100F44DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC93D771F8E413100F44DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -200,6 +206,10 @@
 				DCA32D291F951E88007E77C1 /* SMPushAnimator.m */,
 				DCA32D2B1F9520A1007E77C1 /* SMPopAnimator.h */,
 				DCA32D2C1F9520A1007E77C1 /* SMPopAnimator.m */,
+				DCA32D2E1F95303E007E77C1 /* SMCategorySearchPushAnimator.h */,
+				DCA32D2F1F95303E007E77C1 /* SMCategorySearchPushAnimator.m */,
+				DCA32D311F953054007E77C1 /* SMCategorySearchPopAnimator.h */,
+				DCA32D321F953054007E77C1 /* SMCategorySearchPopAnimator.m */,
 			);
 			name = Animators;
 			sourceTree = "<group>";
@@ -454,8 +464,10 @@
 				DCA32D081F8FE70D007E77C1 /* SMHomeWorkAddressViewCell.m in Sources */,
 				DCA32CF81F8FA1FE007E77C1 /* SMCategoryLabel.m in Sources */,
 				DCA32CEC1F8E5A07007E77C1 /* SMCustomView.m in Sources */,
+				DCA32D331F953054007E77C1 /* SMCategorySearchPopAnimator.m in Sources */,
 				DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */,
 				DCA32D111F911BFC007E77C1 /* SMMapViewController.m in Sources */,
+				DCA32D301F95303E007E77C1 /* SMCategorySearchPushAnimator.m in Sources */,
 				DCA32CF51F8F9501007E77C1 /* SMCategoryViewCell.m in Sources */,
 				DCA32D171F93AF84007E77C1 /* SMCategoryDescriptionTableViewCell.m in Sources */,
 				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,

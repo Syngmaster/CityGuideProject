@@ -8,10 +8,6 @@
 
 #import "SMPopAnimator.h"
 
-@interface SMPopAnimator ()
-
-@end
-
 @implementation SMPopAnimator
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
