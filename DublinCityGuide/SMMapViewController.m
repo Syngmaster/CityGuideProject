@@ -9,6 +9,7 @@
 #import "SMMapViewController.h"
 #import "SMBottomViewController.h"
 #import "SMLocationDescriptionViewController.h"
+#import "SMDataManager.h"
 
 @interface SMMapViewController () <MKMapViewDelegate, UIGestureRecognizerDelegate>
 
@@ -31,6 +32,11 @@
     [super viewDidAppear:animated];
     [self addBottomVC];
     //[self addDescriptionVC];
+    
+    [[SMDataManager sharedInstance] getCategoriesFronFirebaseOnCompletion:^(NSArray *resultArray, NSError *error) {
+        
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

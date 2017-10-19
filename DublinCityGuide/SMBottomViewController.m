@@ -145,7 +145,6 @@
         cell = [[SMCategoryDescriptionTableViewCell alloc] init];
     }
     
-    
     return cell;
 }
 

@@ -7,8 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SMMainViewController.h"
 
 @interface DublinCityGuideTests : XCTestCase
+
+@property (strong, nonatomic) SMMainViewController *mainVC;
 
 @end
 
@@ -17,6 +20,12 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    SMMainViewController *mainVC = [mainSB instantiateViewControllerWithIdentifier:@"SMMainViewController"];
+    self.mainVC = mainVC;
+    
+    
 }
 
 - (void)tearDown {
@@ -24,9 +33,14 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testInitialMapViewSetting {
+    
+    [self.mainVC viewDidAppear:YES];
+    MKCoordinateSpan span = self.mainVC.mapView.region.span;
+
+    XCTAssertTrue(span.latitudeDelta > 0.3 && span.latitudeDelta < 0.32);
+    XCTAssertTrue(span.longitudeDelta > 0.3 && span.longitudeDelta < 0.32);
+    
 }
 
 - (void)testPerformanceExample {

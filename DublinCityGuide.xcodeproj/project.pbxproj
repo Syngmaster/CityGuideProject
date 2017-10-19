@@ -43,6 +43,7 @@
 		DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */; };
 		DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */; };
 		DCE8A6BF1F990731007626E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */; };
+		DCE8A6C21F992338007626E2 /* SMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8A6C11F992338007626E2 /* SMDataManager.m */; };
 		E15A169B0388A1839FCFD844 /* libPods-DublinCityGuideTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3909937085812469ACA09029 /* libPods-DublinCityGuideTests.a */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,8 @@
 		DCC93DAF1F8E43D400F44DCD /* SMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMainViewController.h; sourceTree = "<group>"; };
 		DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMainViewController.m; sourceTree = "<group>"; };
 		DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCE8A6C01F992338007626E2 /* SMDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDataManager.h; sourceTree = "<group>"; };
+		DCE8A6C11F992338007626E2 /* SMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDataManager.m; sourceTree = "<group>"; };
 		F7A76EAD33DDD5BBEBDBABAB /* Pods-DublinCityGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuide/Pods-DublinCityGuide.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,6 +323,8 @@
 				DCA32D271F951E58007E77C1 /* Animators */,
 				DCC93DAA1F8E415900F44DCD /* SMLocationModel.h */,
 				DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */,
+				DCE8A6C01F992338007626E2 /* SMDataManager.h */,
+				DCE8A6C11F992338007626E2 /* SMDataManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -632,6 +637,7 @@
 				DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */,
 				DCC93D821F8E413100F44DCD /* DublinCityGuide.xcdatamodeld in Sources */,
 				DCA32D201F93BF94007E77C1 /* SMLocationDescriptionViewController.m in Sources */,
+				DCE8A6C21F992338007626E2 /* SMDataManager.m in Sources */,
 				DCA32D2D1F9520A1007E77C1 /* SMPopAnimator.m in Sources */,
 				DCA32D231F93CA00007E77C1 /* SMBottomTabView.m in Sources */,
 				DCA32CFE1F8FD57B007E77C1 /* SMFavouritesViewController.m in Sources */,

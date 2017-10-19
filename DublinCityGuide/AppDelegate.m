@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Firebase.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +22,8 @@
                                                   forBarMetrics:UIBarMetricsDefault];
     [UINavigationBar appearance].shadowImage = [UIImage new];
     [UINavigationBar appearance].translucent = YES;
+    
+    [FIRApp configure];
     
     return YES;
 }

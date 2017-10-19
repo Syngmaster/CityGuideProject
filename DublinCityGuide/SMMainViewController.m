@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, ZoomAction) {
     MKCoordinateSpan currentSpan = MKCoordinateSpanMake(0.3, 0.3);
     MKCoordinateRegion currentRegion = MKCoordinateRegionMake(cityCenterCoordinates, currentSpan);
     [self.mapView setRegion:currentRegion];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
