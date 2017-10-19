@@ -12,7 +12,7 @@
 @implementation SMCategorySearchPushAnimator
 
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext {
-    return 0.4;
+    return 0.5;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
@@ -21,15 +21,14 @@
 
     
     [[transitionContext containerView] addSubview:toViewController.view];
-    
-    //toViewController.view.alpha = 0.0;
-    //toViewController.view.transform = CGAffineTransformMakeScale(1.1, 1.1);
 
     toViewController.animatableLeftConstraint.constant = 24.0;
     toViewController.animatableRightConstraint.constant = 25.0;
     toViewController.view.alpha = 0.0;
-    CGRect oldFrame = toViewController.collectionView.frame;
-    toViewController.collectionView.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y - 200, oldFrame.size.width, oldFrame.size.height);
+    toViewController.collectionView.transform = CGAffineTransformMakeScale(0.4, 0.4);
+
+    //CGRect oldFrame = toViewController.view.frame;
+    //toViewController.view.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + 30, oldFrame.size.width, oldFrame.size.height);
     [toViewController.view layoutIfNeeded];
 
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
@@ -37,7 +36,8 @@
         toViewController.animatableLeftConstraint.constant = 5.0;
         toViewController.animatableRightConstraint.constant = 6.0;
         toViewController.view.alpha = 1.0;
-        toViewController.collectionView.frame = oldFrame;
+        //toViewController.view.frame = oldFrame;
+        toViewController.collectionView.transform = CGAffineTransformMakeScale(1.0, 1.0);
         [toViewController.view layoutIfNeeded];
 
     } completion:^(BOOL finished) {

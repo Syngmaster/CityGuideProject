@@ -66,17 +66,14 @@
     if (sender.state == UIGestureRecognizerStateEnded) {
         
         CGFloat duration = 0.5;
-        
 
         if (velocity.y >= 0) {
             
             [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.minPositionY];
 
-            
         } else {
             
             [self moveViewAnimatableWithDuration:duration velocity:velocity toPosition:self.maxPositionY];
-
         }
         
         self.progress = 0.0;
@@ -84,7 +81,6 @@
     }
     
     [self animateMapViewAlpha];
-
     
 }
 
@@ -111,7 +107,7 @@
     CGFloat yPosition = self.maxPositionY + 120;
     
     if (self.view.frame.origin.y <= yPosition) {
-
+        
          [UIView animateWithDuration:0.4 animations:^{
          
              mapVC.mapView.alpha = (self.view.frame.origin.y - self.maxPositionY)/100;

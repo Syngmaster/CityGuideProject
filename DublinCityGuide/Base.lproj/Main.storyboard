@@ -64,13 +64,19 @@
                                             <constraint firstAttribute="width" secondItem="I0u-mp-YpU" secondAttribute="height" multiplier="1:1" id="ZvD-II-KIS"/>
                                         </constraints>
                                         <state key="normal" image="zoomin_button"/>
+                                        <connections>
+                                            <action selector="zoomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKb-v7-FNA"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNg-Ed-wXk">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNg-Ed-wXk">
                                         <rect key="frame" x="0.0" y="65" width="65" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="QNg-Ed-wXk" secondAttribute="height" multiplier="1:1" id="IyX-rd-UhT"/>
                                         </constraints>
                                         <state key="normal" image="zoomout_button"/>
+                                        <connections>
+                                            <action selector="zoomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kof-e7-rre"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv5-sB-mVN">
                                         <rect key="frame" x="0.0" y="130" width="65" height="65"/>
@@ -78,6 +84,9 @@
                                             <constraint firstAttribute="width" secondItem="Sv5-sB-mVN" secondAttribute="height" multiplier="1:1" id="6zm-EG-C8x"/>
                                         </constraints>
                                         <state key="normal" image="mylocation_button"/>
+                                        <connections>
+                                            <action selector="getCurrentLocationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2C-cj-hA1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

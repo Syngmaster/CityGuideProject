@@ -16,6 +16,11 @@
 #import "SMCategorySearchPushAnimator.h"
 #import "SMCategorySearchPopAnimator.h"
 
+typedef NS_ENUM(NSInteger, ZoomAction) {
+    ZoomActionIn,
+    ZoomActionOut
+};
+
 @interface SMMainViewController () <UITextFieldDelegate, MKMapViewDelegate, SMCategoriesViewDelegate, SMCategoriesSearchViewDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) SMLocationModel *homeLocation;
@@ -40,7 +45,17 @@
     self.navigationController.delegate = self;
     self.mapView.delegate = self;
     //[self.mapView addAnnotation:model];
+    [self setInitialRegion];
 
+}
+
+- (void)setInitialRegion {
+    
+    CLLocationCoordinate2D cityCenterCoordinates = CLLocationCoordinate2DMake(53.349809, -6.260255);
+    MKCoordinateSpan currentSpan = MKCoordinateSpanMake(0.3, 0.3);
+    MKCoordinateRegion currentRegion = MKCoordinateRegionMake(cityCenterCoordinates, currentSpan);
+    [self.mapView setRegion:currentRegion];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,11 +100,38 @@
 
 }
 
+#pragma mark - Actions
 
 - (IBAction)showMenuAction:(UIButton *)sender {
     [self performSegueWithIdentifier:@"menu" sender:nil];
 }
 
+- (IBAction)getCurrentLocationAction:(UIButton *)sender {
+}
+
+- (IBAction)zoomAction:(UIButton *)sender {
+    
+    switch (sender.tag) {
+        case ZoomActionIn: [self zoomMapView:self.mapView byDelta:0.5];
+            break;
+        case ZoomActionOut: [self zoomMapView:self.mapView byDelta:1/0.5];
+            break;
+    }
+    
+}
+
+- (void)zoomMapView:(MKMapView *)mapView byDelta:(float)delta {
+    
+    MKCoordinateRegion region = mapView.region;
+    MKCoordinateSpan span = mapView.region.span;
+    span.latitudeDelta*=delta;
+    span.longitudeDelta*=delta;
+    
+    if (span.latitudeDelta <=180 && span.latitudeDelta > 0) {
+        region.span=span;
+        [mapView setRegion:region animated:YES];
+    }
+}
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"menu"]) {

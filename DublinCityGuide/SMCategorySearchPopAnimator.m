@@ -13,13 +13,13 @@
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.3;
+    return 0.5;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    UIViewController* toViewController   = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    SMCategoriesSearchViewController* fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    SMCategoriesSearchViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
     [[transitionContext containerView] insertSubview:toViewController.view belowSubview:fromViewController.view];
     [fromViewController.view layoutIfNeeded];
@@ -28,12 +28,10 @@
 
         fromViewController.animatableLeftConstraint.constant = 24.0;
         fromViewController.animatableRightConstraint.constant = 25.0;
-        fromViewController.collectionView.alpha = 0.0;
-
+        fromViewController.collectionView.transform = CGAffineTransformMakeScale(0.4, 0.4);
         fromViewController.view.alpha = 0.0;
-        
-        CGRect oldFrame = fromViewController.view.frame;
-        fromViewController.view.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y - 200, oldFrame.size.width, oldFrame.size.height);
+        //CGRect oldFrame = fromViewController.view.frame;
+        //fromViewController.view.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + 30, oldFrame.size.width, oldFrame.size.height);
 
         [fromViewController.view layoutIfNeeded];
 

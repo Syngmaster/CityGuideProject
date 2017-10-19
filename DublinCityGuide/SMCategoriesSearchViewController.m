@@ -9,7 +9,7 @@
 #import "SMCategoriesSearchViewController.h"
 #import "SMCategoryViewCell.h"
 
-@interface SMCategoriesSearchViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate>
+@interface SMCategoriesSearchViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UINavigationBarDelegate>
 
 @end
 
@@ -23,6 +23,11 @@
     self.navigationItem.leftBarButtonItem = backBtn;
 
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.searchTextField becomeFirstResponder];
 }
 
 
