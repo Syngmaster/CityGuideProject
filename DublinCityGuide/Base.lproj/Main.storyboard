@@ -575,7 +575,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ay-if-VCC" customClass="SMRectangleView">
-                                                            <rect key="frame" x="8" y="8" width="318" height="115"/>
+                                                            <rect key="frame" x="8" y="7.5" width="318" height="115"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eQD-yD-ksg">
                                                                     <rect key="frame" x="31" y="10" width="277" height="95"/>

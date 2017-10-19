@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B751C94C62FC626388A393A /* libPods-DublinCityGuideUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE3EBB6D81C25B045435356 /* libPods-DublinCityGuideUITests.a */; };
+		BAB82D7D66631AC23DA1C759 /* libPods-DublinCityGuide.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6251DDACDBB91ECFF4FE8A30 /* libPods-DublinCityGuide.a */; };
 		DCA32CE81F8E58A0007E77C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA32CE61F8E4469007E77C1 /* MapKit.framework */; };
 		DCA32CEC1F8E5A07007E77C1 /* SMCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEB1F8E5A07007E77C1 /* SMCustomView.m */; };
 		DCA32CEF1F8E77B9007E77C1 /* SMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32CEE1F8E77B9007E77C1 /* SMSearchTextField.m */; };
@@ -40,6 +42,8 @@
 		DCC93D9D1F8E413200F44DCD /* DublinCityGuideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93D9C1F8E413200F44DCD /* DublinCityGuideUITests.m */; };
 		DCC93DAC1F8E415900F44DCD /* SMLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */; };
 		DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */; };
+		DCE8A6BF1F990731007626E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */; };
+		E15A169B0388A1839FCFD844 /* libPods-DublinCityGuideTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3909937085812469ACA09029 /* libPods-DublinCityGuideTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BF713679E8024AD32A8A40C /* Pods-DublinCityGuideUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuideUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuideUITests/Pods-DublinCityGuideUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		185237662920B767E421149D /* Pods-DublinCityGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuide/Pods-DublinCityGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		202C4DB7785FBC313A7B07D5 /* Pods-DublinCityGuideUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuideUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuideUITests/Pods-DublinCityGuideUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3909937085812469ACA09029 /* libPods-DublinCityGuideTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DublinCityGuideTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE3EBB6D81C25B045435356 /* libPods-DublinCityGuideUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DublinCityGuideUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4751389BE7459C51C532F1E3 /* Pods-DublinCityGuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuideTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuideTests/Pods-DublinCityGuideTests.release.xcconfig"; sourceTree = "<group>"; };
+		572E1DBD92E2635F7CC6F6FC /* Pods-DublinCityGuideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuideTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuideTests/Pods-DublinCityGuideTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6251DDACDBB91ECFF4FE8A30 /* libPods-DublinCityGuide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DublinCityGuide.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA32CE61F8E4469007E77C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DCA32CEA1F8E5A07007E77C1 /* SMCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCustomView.h; sourceTree = "<group>"; };
 		DCA32CEB1F8E5A07007E77C1 /* SMCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCustomView.m; sourceTree = "<group>"; };
@@ -124,6 +136,8 @@
 		DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLocationModel.m; sourceTree = "<group>"; };
 		DCC93DAF1F8E43D400F44DCD /* SMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMainViewController.h; sourceTree = "<group>"; };
 		DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMainViewController.m; sourceTree = "<group>"; };
+		DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7A76EAD33DDD5BBEBDBABAB /* Pods-DublinCityGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuide/Pods-DublinCityGuide.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA32CE81F8E58A0007E77C1 /* MapKit.framework in Frameworks */,
+				BAB82D7D66631AC23DA1C759 /* libPods-DublinCityGuide.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15A169B0388A1839FCFD844 /* libPods-DublinCityGuideTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,16 +162,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B751C94C62FC626388A393A /* libPods-DublinCityGuideUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74F6F1994729602344CE7A4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				185237662920B767E421149D /* Pods-DublinCityGuide.debug.xcconfig */,
+				F7A76EAD33DDD5BBEBDBABAB /* Pods-DublinCityGuide.release.xcconfig */,
+				572E1DBD92E2635F7CC6F6FC /* Pods-DublinCityGuideTests.debug.xcconfig */,
+				4751389BE7459C51C532F1E3 /* Pods-DublinCityGuideTests.release.xcconfig */,
+				0BF713679E8024AD32A8A40C /* Pods-DublinCityGuideUITests.debug.xcconfig */,
+				202C4DB7785FBC313A7B07D5 /* Pods-DublinCityGuideUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCA32CE51F8E4469007E77C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DCA32CE61F8E4469007E77C1 /* MapKit.framework */,
+				6251DDACDBB91ECFF4FE8A30 /* libPods-DublinCityGuide.a */,
+				3909937085812469ACA09029 /* libPods-DublinCityGuideTests.a */,
+				3DE3EBB6D81C25B045435356 /* libPods-DublinCityGuideUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,6 +255,7 @@
 				DCC93D9B1F8E413200F44DCD /* DublinCityGuideUITests */,
 				DCC93D721F8E413100F44DCD /* Products */,
 				DCA32CE51F8E4469007E77C1 /* Frameworks */,
+				74F6F1994729602344CE7A4F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +281,7 @@
 				DCC93D831F8E413100F44DCD /* Assets.xcassets */,
 				DCC93D851F8E413100F44DCD /* LaunchScreen.storyboard */,
 				DCC93D881F8E413100F44DCD /* Info.plist */,
+				DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */,
 				DCC93D801F8E413100F44DCD /* DublinCityGuide.xcdatamodeld */,
 				DCC93D741F8E413100F44DCD /* Supporting Files */,
 			);
@@ -317,9 +352,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC93DA11F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuide" */;
 			buildPhases = (
+				03103C81C7E7F835B82DC9D4 /* [CP] Check Pods Manifest.lock */,
 				DCC93D6D1F8E413100F44DCD /* Sources */,
 				DCC93D6E1F8E413100F44DCD /* Frameworks */,
 				DCC93D6F1F8E413100F44DCD /* Resources */,
+				6C05850B9C193AD5D6A20E2A /* [CP] Embed Pods Frameworks */,
+				8346DAEC1D9F60A4FDC365E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,9 +372,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC93DA41F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuideTests" */;
 			buildPhases = (
+				6A5050B6AF9BC1617A53D44F /* [CP] Check Pods Manifest.lock */,
 				DCC93D891F8E413200F44DCD /* Sources */,
 				DCC93D8A1F8E413200F44DCD /* Frameworks */,
 				DCC93D8B1F8E413200F44DCD /* Resources */,
+				70D73B0283DD553682AD5B21 /* [CP] Embed Pods Frameworks */,
+				F93B108CD1F0E190C661158D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,9 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC93DA71F8E413200F44DCD /* Build configuration list for PBXNativeTarget "DublinCityGuideUITests" */;
 			buildPhases = (
+				A7C5258B01DF0FD8D06C48CD /* [CP] Check Pods Manifest.lock */,
 				DCC93D941F8E413200F44DCD /* Sources */,
 				DCC93D951F8E413200F44DCD /* Frameworks */,
 				DCC93D961F8E413200F44DCD /* Resources */,
+				C456AD6F53FC7BD03B084DCA /* [CP] Embed Pods Frameworks */,
+				9FAE9E3ACDB64CF4898B1440 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -420,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC93D871F8E413100F44DCD /* LaunchScreen.storyboard in Resources */,
+				DCE8A6BF1F990731007626E2 /* GoogleService-Info.plist in Resources */,
 				DCC93D841F8E413100F44DCD /* Assets.xcassets in Resources */,
 				DCC93D7F1F8E413100F44DCD /* Main.storyboard in Resources */,
 			);
@@ -440,6 +485,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03103C81C7E7F835B82DC9D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A5050B6AF9BC1617A53D44F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C05850B9C193AD5D6A20E2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DublinCityGuide/Pods-DublinCityGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D73B0283DD553682AD5B21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DublinCityGuideTests/Pods-DublinCityGuideTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8346DAEC1D9F60A4FDC365E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DublinCityGuide/Pods-DublinCityGuide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAE9E3ACDB64CF4898B1440 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DublinCityGuideUITests/Pods-DublinCityGuideUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C5258B01DF0FD8D06C48CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C456AD6F53FC7BD03B084DCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DublinCityGuideUITests/Pods-DublinCityGuideUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93B108CD1F0E190C661158D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DublinCityGuideTests/Pods-DublinCityGuideTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCC93D6D1F8E413100F44DCD /* Sources */ = {
@@ -621,30 +804,33 @@
 		};
 		DCC93DA21F8E413200F44DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185237662920B767E421149D /* Pods-DublinCityGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4PMQKT6K8N;
 				INFOPLIST_FILE = DublinCityGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = "XC-ios-DublinCityGuide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		DCC93DA31F8E413200F44DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A76EAD33DDD5BBEBDBABAB /* Pods-DublinCityGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4PMQKT6K8N;
 				INFOPLIST_FILE = DublinCityGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ios.DublinCityGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = "XC-ios-DublinCityGuide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		DCC93DA51F8E413200F44DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572E1DBD92E2635F7CC6F6FC /* Pods-DublinCityGuideTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4PMQKT6K8N;
@@ -658,6 +844,7 @@
 		};
 		DCC93DA61F8E413200F44DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4751389BE7459C51C532F1E3 /* Pods-DublinCityGuideTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4PMQKT6K8N;
@@ -671,6 +858,7 @@
 		};
 		DCC93DA81F8E413200F44DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF713679E8024AD32A8A40C /* Pods-DublinCityGuideUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4PMQKT6K8N;
 				INFOPLIST_FILE = DublinCityGuideUITests/Info.plist;
@@ -683,6 +871,7 @@
 		};
 		DCC93DA91F8E413200F44DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 202C4DB7785FBC313A7B07D5 /* Pods-DublinCityGuideUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4PMQKT6K8N;
 				INFOPLIST_FILE = DublinCityGuideUITests/Info.plist;
