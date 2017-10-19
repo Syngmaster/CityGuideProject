@@ -15,4 +15,7 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 - (IBAction)showMenuAction:(UIButton *)sender;
 
+- (IBAction)getCurrentLocationAction:(UIButton *)sender;
+- (IBAction)zoomAction:(UIButton *)sender;
+
 @end
