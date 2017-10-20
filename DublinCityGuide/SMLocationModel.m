@@ -10,4 +10,19 @@
 
 @implementation SMLocationModel
 
+- (instancetype)initWithDict:(NSDictionary *)dict {
+    
+    self = [super init];
+    if (self) {
+        NSLog(@"%@", dict);
+        self.locationAddress = [dict valueForKey:@"address"];
+        self.locationPhoneNumber = [dict valueForKey:@"phone"];
+        self.locationWorkingHours = [dict valueForKey:@"hours"];
+        self.locationWebsite = [dict valueForKey:@"website"];
+        self.subCategoryName = [dict valueForKey:@"subCategoryName"];
+        
+    }
+    return self;
+}
+
 @end

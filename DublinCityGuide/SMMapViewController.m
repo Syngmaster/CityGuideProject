@@ -33,10 +33,7 @@
     [self addBottomVC];
     //[self addDescriptionVC];
     
-    [[SMDataManager sharedInstance] getCategoriesFronFirebaseOnCompletion:^(NSArray *resultArray, NSError *error) {
-        
-        
-    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

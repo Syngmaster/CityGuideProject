@@ -15,7 +15,11 @@
 @property (strong, nonatomic) NSString *locationAddress;
 @property (strong, nonatomic) NSString *locationPhoneNumber;
 @property (strong, nonatomic) NSString *locationWorkingHours;
+@property (strong, nonatomic) NSString *locationWebsite;
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (strong, nonatomic) NSString *subCategoryName;
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
 
 @end

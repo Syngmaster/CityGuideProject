@@ -10,6 +10,7 @@
 #import "SMLocationModel.h"
 #import "SMCategoriesViewController.h"
 #import "SMCategoriesSearchViewController.h"
+#import "SMDataManager.h"
 
 #import "SMPushAnimator.h"
 #import "SMPopAnimator.h"
@@ -24,6 +25,7 @@ typedef NS_ENUM(NSInteger, ZoomAction) {
 @interface SMMainViewController () <UITextFieldDelegate, MKMapViewDelegate, SMCategoriesViewDelegate, SMCategoriesSearchViewDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) SMLocationModel *homeLocation;
+@property (strong, nonatomic) NSArray *testLocationsArray;
 
 @end
 
@@ -46,6 +48,11 @@ typedef NS_ENUM(NSInteger, ZoomAction) {
     self.mapView.delegate = self;
     //[self.mapView addAnnotation:model];
     [self setInitialRegion];
+    
+    [[SMDataManager sharedInstance] getCategoriesFronFirebaseOnCompletion:^(NSArray *resultArray, NSError *error) {
+        
+        self.testLocationsArray = resultArray;
+    }];
 
 }
 
@@ -135,11 +142,16 @@ typedef NS_ENUM(NSInteger, ZoomAction) {
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"menu"]) {
+        
         SMCategoriesViewController *dvc = segue.destinationViewController;
         dvc.delegate = self;
+        dvc.testLocationsArray = self.testLocationsArray;
+        
     } else if ([segue.identifier isEqualToString:@"searchMenu"]) {
+        
         SMCategoriesSearchViewController *dvc = segue.destinationViewController;
         dvc.delegate = self;
+        dvc.testLocationsArray = self.testLocationsArray;
     }
     
 }

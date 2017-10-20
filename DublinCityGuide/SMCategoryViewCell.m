@@ -7,8 +7,16 @@
 //
 
 #import "SMCategoryViewCell.h"
+#import "SMCategoryModel.h"
 
 @implementation SMCategoryViewCell
+
+- (void)configureCellWithCategory:(SMCategoryModel *) categoryModel {
+    
+    self.categoryCountLabel.text = [NSString stringWithFormat:@"%i", (int)[categoryModel.arrayOfLocations count]];
+    self.categoryNameLabel.text = categoryModel.categoryName;
+    
+}
 
 
 @end

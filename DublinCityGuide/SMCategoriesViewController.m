@@ -36,7 +36,7 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 30;
+    return [self.testLocationsArray count];
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -46,7 +46,7 @@
         cell = [[SMCategoryViewCell alloc] init];
     }
     
-    
+    [cell configureCellWithCategory:self.testLocationsArray[indexPath.row]];
     
     return cell;
     

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DublinCityGuide/SMMapViewController.m"
-            timestampString = "530130632.122043"
+            timestampString = "530209010.588278"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-addBottomVC"
             landmarkType = "7">
          </BreakpointContent>

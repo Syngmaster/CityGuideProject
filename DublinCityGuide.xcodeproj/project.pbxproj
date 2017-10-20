@@ -44,6 +44,7 @@
 		DCC93DB11F8E43D400F44DCD /* SMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC93DB01F8E43D400F44DCD /* SMMainViewController.m */; };
 		DCE8A6BF1F990731007626E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */; };
 		DCE8A6C21F992338007626E2 /* SMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8A6C11F992338007626E2 /* SMDataManager.m */; };
+		DCE8A6C51F9A4A99007626E2 /* SMCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8A6C41F9A4A99007626E2 /* SMCategoryModel.m */; };
 		E15A169B0388A1839FCFD844 /* libPods-DublinCityGuideTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3909937085812469ACA09029 /* libPods-DublinCityGuideTests.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,8 @@
 		DCE8A6BE1F990731007626E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCE8A6C01F992338007626E2 /* SMDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDataManager.h; sourceTree = "<group>"; };
 		DCE8A6C11F992338007626E2 /* SMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDataManager.m; sourceTree = "<group>"; };
+		DCE8A6C31F9A4A99007626E2 /* SMCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryModel.h; sourceTree = "<group>"; };
+		DCE8A6C41F9A4A99007626E2 /* SMCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryModel.m; sourceTree = "<group>"; };
 		F7A76EAD33DDD5BBEBDBABAB /* Pods-DublinCityGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DublinCityGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-DublinCityGuide/Pods-DublinCityGuide.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,6 +328,8 @@
 				DCC93DAB1F8E415900F44DCD /* SMLocationModel.m */,
 				DCE8A6C01F992338007626E2 /* SMDataManager.h */,
 				DCE8A6C11F992338007626E2 /* SMDataManager.m */,
+				DCE8A6C31F9A4A99007626E2 /* SMCategoryModel.h */,
+				DCE8A6C41F9A4A99007626E2 /* SMCategoryModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -662,6 +667,7 @@
 				DCA32D011F8FD7CD007E77C1 /* SMAddLocationButton.m in Sources */,
 				DCA32D2A1F951E88007E77C1 /* SMPushAnimator.m in Sources */,
 				DCA32D261F94E0FA007E77C1 /* SMViewForButton.m in Sources */,
+				DCE8A6C51F9A4A99007626E2 /* SMCategoryModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

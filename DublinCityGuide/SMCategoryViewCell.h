@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class SMCategoryModel;
+
 @interface SMCategoryViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryCountLabel;
+
+- (void)configureCellWithCategory:(SMCategoryModel *) categoryModel;
 
 @end

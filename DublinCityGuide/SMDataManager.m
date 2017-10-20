@@ -8,6 +8,8 @@
 
 #import "SMDataManager.h"
 #import <FirebaseDatabase/FirebaseDatabase.h>
+#import "SMLocationModel.h"
+#import "SMCategoryModel.h"
 
 @interface SMDataManager ()
 
@@ -34,9 +36,19 @@
     self.ref = [[FIRDatabase database] reference];
     
     [self.ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSMutableArray *array = [NSMutableArray array];
+        NSDictionary *mainDict = snapshot.value;
+        //NSLog(@"%@", snapshot.value);
         
-        NSLog(@"%@", snapshot.value);
+        for (NSString *dictName in mainDict) {
+            NSLog(@"%@", dictName);
+            NSDictionary *dict = [mainDict valueForKey:dictName];
+
+            SMCategoryModel *model = [[SMCategoryModel alloc] initWithDict:dict];
+            [array addObject:model];
+        }
         
+        completionHandler(array, nil);
         
     }];
     

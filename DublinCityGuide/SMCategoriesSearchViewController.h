@@ -24,4 +24,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *animatableRightConstraint;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 
+@property (strong, nonatomic) NSArray *testLocationsArray;
+
 @end

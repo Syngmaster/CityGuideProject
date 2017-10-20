@@ -20,5 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) id <SMCategoriesViewDelegate> delegate;
+@property (strong, nonatomic) NSArray *testLocationsArray;
 
 @end
